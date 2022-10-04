@@ -2,7 +2,15 @@
     <link type="text/css" rel="stylesheet" href="stylesheets/salesforce-lightning-design-system.min.css" />
 </head>    
 <div id="smart-button-container">
-    <div style="text-align: center"><label for="description">Name & Description: </label><input type="text" name="descriptionInput" id="description" maxlength="127" value=""></div>
+    <div style="text-align: center">
+        <div class="slds-form-element">
+          <label class="slds-form-element__label" for="description">
+            <abbr class="slds-required" title="required">* </abbr>Input Label</label>
+          <div class="slds-form-element__control">
+            <input type="text" name="descriptionInput" id="description" placeholder="0" required="true" class="slds-input" />
+          </div>
+        </div>
+    </div>
       <p id="descriptionError" style="visibility: hidden; color:red; text-align: center;">Please enter a description</p>
     <div style="text-align: center"><label for="amount">Amount: </label><input name="amountInput" type="number" id="amount" value="" ><span> USD</span></div>
       <p id="priceLabelError" style="visibility: hidden; color:red; text-align: center;">Please enter a price</p>
