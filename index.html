@@ -18,13 +18,26 @@
         class="slds-card"
         style="
           margin: 5rem;
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
         "
       >
+        <div class="slds-card__header slds-grid">
+          <header class="slds-media slds-media_center slds-has-flexi-truncate">
+            <div class="slds-media__body">
+              <h2 class="slds-card__header-title">
+                <span>Sally Goldfarb's Order Form 📝</span>
+              </h2>
+            </div>
+          </header>
+        </div>
         <div class="slds-p-around_medium">
           <div id="smart-button-container" class="slds-form">
             <div class="slds-form-element slds-form-element_horizontal">
-              <label style="font-weight: bold;" class="slds-form-element__label" for="description"
+              <label
+                style="font-weight: bold"
+                class="slds-form-element__label"
+                for="description"
                 ><abbr class="slds-required" title="required">* </abbr>Name &
                 Description</label
               >
@@ -46,7 +59,10 @@
               </p>
             </div>
             <div class="slds-form-element slds-form-element_horizontal">
-              <label style="font-weight: bold;" class="slds-form-element__label" for="amount"
+              <label
+                style="font-weight: bold"
+                class="slds-form-element__label"
+                for="amount"
                 ><abbr class="slds-required" title="required">* </abbr>Amount
                 (USD)</label
               >
@@ -67,9 +83,26 @@
                 Please enter a price
               </p>
             </div>
-            <div id="invoiceidDiv" style="text-align: center; display: none;"><label for="invoiceid"> </label><input name="invoiceid" maxlength="127" type="text" id="invoiceid" value="" ></div>
-              <p id="invoiceidError" style="visibility: hidden; color:red; text-align: center;">Please enter an Invoice ID</p>
-            <div style="text-align: center; margin-top: 0.625rem;" id="paypal-button-container"></div>
+            <div id="invoiceidDiv" style="text-align: center; display: none">
+              <label for="invoiceid"> </label
+              ><input
+                name="invoiceid"
+                maxlength="127"
+                type="text"
+                id="invoiceid"
+                value=""
+              />
+            </div>
+            <p
+              id="invoiceidError"
+              style="visibility: hidden; color: red; text-align: center"
+            >
+              Please enter an Invoice ID
+            </p>
+            <div
+              style="text-align: center; margin-top: 0.625rem"
+              id="paypal-button-container"
+            ></div>
           </div>
         </div>
       </div>
