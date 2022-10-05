@@ -23,8 +23,8 @@
           -webkit-box-shadow: none;
         "
       >
-        <div id="smart-button-container" class="slds-p-around_medium">
-          <div class="slds-form">
+        <div class="slds-p-around_medium">
+          <div id="smart-button-container" class="slds-form">
             <div class="slds-form-element slds-form-element_horizontal">
               <label class="slds-form-element__label" for="description"
                 ><abbr class="slds-required" title="required">* </abbr>Name &
@@ -49,8 +49,8 @@
             </div>
             <div class="slds-form-element slds-form-element_horizontal">
               <label class="slds-form-element__label" for="amount"
-                ><abbr class="slds-required" title="required">* </abbr
-                >Amount (USD)</label
+                ><abbr class="slds-required" title="required">* </abbr>Amount
+                (USD)</label
               >
               <div class="slds-form-element__control">
                 <input
@@ -69,6 +69,26 @@
                 Please enter a price
               </p>
             </div>
+            <div id="invoiceidDiv" style="text-align: center; display: none">
+              <label for="invoiceid"> </label
+              ><input
+                name="invoiceid"
+                maxlength="127"
+                type="text"
+                id="invoiceid"
+                value=""
+              />
+            </div>
+            <p
+              id="invoiceidError"
+              style="visibility: hidden; color: red; text-align: center"
+            >
+              Please enter an Invoice ID
+            </p>
+            <div
+              style="text-align: center; margin-top: 0.625rem"
+              id="paypal-button-container"
+            ></div>
           </div>
         </div>
       </div>
